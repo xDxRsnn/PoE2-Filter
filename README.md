@@ -1,7 +1,7 @@
 # PoE2-Filter
 Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
 
-##  [Download](https://github.com/RetroCro/PoE2-Filter/archive/refs/heads/main.zip).
+##  [Download](https://github.com/RetroCro/PoE2-Filter/archive/refs/heads/main.zip)
 
 ## Changes
  - Increased font size of all items to the max 
