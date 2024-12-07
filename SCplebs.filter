@@ -5,10 +5,10 @@
 
 Show # CURRENCY - SCROLL OF WISDOM
 BaseType == "Scroll of Wisdom"
-    Class "Currency"
+	Class "Currency"
 	SetTextColor 32 255 0
 	SetBorderColor 100 50 30 255
-    SetFontSize 45
+	SetFontSize 45
 		
 Show # Runes
 	BaseType "Rune"
@@ -29,7 +29,7 @@ Show # Runes
 	PlayEffect Purple
 	
 Show # CURRENCY - GOLD
-    BaseType == "Gold"
+	BaseType == "Gold"
 	StackSize >= 150
 	SetFontSize 45
 	SetTextColor 235 200 110 255
@@ -38,12 +38,21 @@ Show # CURRENCY - GOLD
 	MinimapIcon 1 Red Cross
 	
 Show # GOLDsmall
-    BaseType == "Gold"
+	BaseType == "Gold"
 	SetFontSize 45
 	SetTextColor 180 180 180 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 20 20 0 180
 	MinimapIcon 2 Grey Cross
+	
+	Show # Currency
+	BaseType == "Uncut Skill Gem" "Uncut Support Gem"
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	PlayEffect Green
+	MinimapIcon 0 Green Circle
 	
 Show # Currency
 	Class == "Stackable Currency"
@@ -67,13 +76,13 @@ Show # Currency
 Show # rares
 	Rarity Rare
 	SetFontSize 45
-SetBackgroundColor 0 80 30 255
-SetBorderColor 0 255 1
+	SetBackgroundColor 0 80 30 255
+	SetBorderColor 0 255 1
 	MinimapIcon 2 Yellow Square
 	
 Show # Magic
 	Rarity Magic
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 0 75 250 255
 	SetBorderColor 0 75 250 255
 	SetBackgroundColor 0 20 40 255
@@ -81,9 +90,9 @@ Show # Magic
 	
 Show # Normal
 	Rarity Normal
-	SetFontSize 45
+	SetFontSize 30
 	SetTextColor 255 255 255
 	
 
 Show # SAFETY ALL NON-FILTERED ITEMS
-    SetFontSize 45
+	SetFontSize 45
