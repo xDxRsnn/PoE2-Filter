@@ -141,7 +141,7 @@ Show # Expedition
 	PlayAlertSound 3 300	
 	
 Show # Expedition-Artifacts
-  BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Sun Artifact" " Order Artifact"
+  BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Sun Artifact" "Order Artifact"
 	SetFontSize 45
 	SetTextColor 255 85 85 255
 	SetBackgroundColor 61 8 8 255
