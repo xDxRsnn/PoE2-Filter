@@ -8,7 +8,7 @@ Show # QUEST ITEMS
 	SetTextColor 0 255 54 255
 	SetBorderColor 0 255 54 255
 	SetBackgroundColor 1 43 0 255
-  PlayAlertSound 2 300
+  PlayAlertSound 7 300
 	SetFontSize 45
 	MinimapIcon 0 Green Star
 	PlayEffect Green Temp
@@ -90,6 +90,7 @@ Show # Splinters-High
 	SetTextColor 255 235 235 255
 	SetBorderColor 210 20 210 255
 	SetBackgroundColor 65 20 80
+	PlayAlertSound 13 300
 	MinimapIcon 1 Purple Kite
   PlayEffect Purple
 
@@ -99,6 +100,7 @@ Show # Splinters-Low
   SetTextColor 255 255 255
   SetBackgroundColor 20 18 85 240
   SetBorderColor 68 68 255 255
+  PlayAlertSound 14 300
 	MinimapIcon 1 Blue Kite
 	
 Show # Map Fragments
@@ -212,7 +214,7 @@ Show # Runes
 	SetFontSize 45
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
-	SetFontSize 45
+	PlayAlertSound 16 300
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 	
@@ -222,6 +224,7 @@ Show # Charms
 	SetTextColor 191 0 255
 	SetBorderColor 191 0 255
 	SetBackgroundColor  20 20 0
+	PlayAlertSound 16 300
 	MinimapIcon 0 Purple Circle
 	PlayEffect Purple
 	
@@ -315,9 +318,9 @@ Show # Fossil Low
 	MinimapIcon 2 White Circle
   PlayAlertSound 2 300
 
-Show # CURRENCY - MIRROR OF KALANDRA
+Show # MIRROR OF KALANDRA
   Class == "Stackable Currency"
-  BaseType "Mirror of Kalandra"
+  BaseType == "Mirror of Kalandra"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -326,16 +329,48 @@ Show # CURRENCY - MIRROR OF KALANDRA
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 	
+Show # Highest Value
+  Class == "Stackable Currency"
+  BaseType == "Mirror Shard" "Fracturing Orb" "Fracturing Shard" "Veiled Chaos Orb"
+	SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetBorderColor 255 0 0 255
+  PlayAlertSound 6 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+	
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Exalted Orb" "Divine Orb" "Orb of Alchemy" "Vaal Orb" "Regal Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism"
+  BaseType == "Chaos Orb" "Exalted Orb" "Divine Orb" "Orb of Alchemy" "Vaal Orb" "Regal Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal" "Artificer's Orb"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
   SetFontSize 45
-  PlayAlertSound ShExalted 300
+	PlayAlertSound 6 300
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red	
+	
+Show # ShardsHigh
+  Class "Currency"
+  BaseType "Horizon Shard" "Binding Shard" "Regal Shard" "Engineer's Shard" "Alchemy Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Chaos Shard" "Exalted Shard" "Artificer's Shard"
+	SetFontSize 45
+  SetTextColor 0 0 0 255
+  SetBorderColor 170 158 130 255
+  SetBackgroundColor 255 255 255 150
+	PlayEffect Grey
+	PlayAlertSound 2 300
+  MinimapIcon 2 Grey Circle
+	
+Show # ShardsLow
+	Class == "Stackable Currency"
+  BaseType == "Alteration Shard" "Transmutation Shard" "Chance Shard"
+	SetFontSize 30
+  SetTextColor 0 0 0 255
+  SetBorderColor 170 158 130 255
+  SetBackgroundColor 255 255 255 150
+	PlayAlertSound 2 300
+  MinimapIcon 2 Grey Circle
 
 Show # Currency
 	Class == "Stackable Currency"
@@ -343,6 +378,7 @@ Show # Currency
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
 	PlayEffect Red
 	MinimapIcon 0 Orange Circle
 	
@@ -353,6 +389,7 @@ Show # Uncut
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
 	PlayEffect Green
+	PlayAlertSound 10 300
 	MinimapIcon 0 Green Circle
 
 Show # Gems
