@@ -1,17 +1,214 @@
-#=======================================================================
+#=================================================
 # RetroCro's Barebone PoE2 Loot Filter
-# retrocro
-#=======================================================================
+# Discord: #retrocro
+#=================================================
+
+Show # QUEST ITEMS
+  Class == "Quest Items"
+	SetTextColor 0 255 54 255
+	SetBorderColor 0 255 54 255
+	SetBackgroundColor 1 43 0 255
+  PlayAlertSound 2 300
+	SetFontSize 45
+	MinimapIcon 0 Green Star
+	PlayEffect Green Temp
 
 Show # CURRENCY - SCROLL OF WISDOM
-BaseType == "Scroll of Wisdom"
-	Class "Currency"
+	BaseType == "Scroll of Wisdom"
 	SetTextColor 32 255 0
 	SetBorderColor 100 50 30 255
 	SetFontSize 45
-		
+	
+Show # Red Maps High
+	Class == "Waystones"
+	WaystoneTier >= 11
+	WaystoneTier <= 13
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 235 235 235 255
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 1 Red Square
+
+Show # Red Maps Low
+	Class == "Waystones"
+	WaystoneTier >= 11
+	WaystoneTier <= 13
+	SetFontSize 45
+  SetTextColor 0 0 0 255
+  SetBackgroundColor 200 200 200 255
+  PlayEffect Yellow
+  MinimapIcon 1 Red Square
+  PlayAlertSound 5 300
+	
+Show # Yellow Maps
+	Class == "Waystones"
+	WaystoneTier >= 6
+	WaystoneTier <= 10
+	SetFontSize 45
+  SetTextColor 255 255 255 255
+  SetBackgroundColor 20 20 0 255
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Square
+  PlayAlertSound 4 300
+	
+Show # White Maps
+	Class == "Waystones"
+	WaystoneTier >= 1
+	WaystoneTier <= 5
+	SetFontSize 45
+  SetTextColor 255 255 255 255
+  SetBackgroundColor 20 20 0 255
+  PlayEffect White
+  MinimapIcon 1 White Square
+  PlayAlertSound 4 300
+	
+Show # Simulacrum
+	Class == "Map Fragments"
+	BaseType == "Simulacrum"
+  SetFontSize 45
+	SetTextColor 0 0 255 255
+	SetBorderColor 0 0 255 255
+	SetBackgroundColor 255 255 255 255
+  PlayAlertSound 1 300
+	MinimapIcon 0 Grey Triangle
+	PlayEffect Grey
+	
+Show # Breachstones
+  Class == "Breachstones"
+	SetFontSize 45
+  SetTextColor 184 0 255
+  SetBackgroundColor 255 255 255
+  SetBorderColor 184 0 255
+  PlayAlertSound 1 300
+	MinimapIcon 0 Purple Hexagon
+	PlayEffect Purple
+
+Show # Splinters-High
+  BaseType == "Splinter of Uul-Netol" "Splinter of Chayula" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Crescent Splinter"
+	SetFontSize 45
+	SetTextColor 255 235 235 255
+	SetBorderColor 210 20 210 255
+	SetBackgroundColor 65 20 80
+	MinimapIcon 1 Purple Kite
+  PlayEffect Purple
+
+Show # Splinters-Low
+	BaseType == "Simulacrum Splinter" "Breach Splinter" "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter"
+	SetFontSize 45
+  SetTextColor 255 255 255
+  SetBackgroundColor 20 18 85 240
+  SetBorderColor 68 68 255 255
+	MinimapIcon 1 Blue Kite
+	
+Show # Map Fragments
+	Class == "Map Fragments"
+	SetFontSize 45
+	SetTextColor 180 0 255 255
+	SetBorderColor 180 0 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	
+	Show # Misc Map Items
+	Class == "Misc Map Items"
+	SetFontSize 45
+	SetTextColor 255 0 255 255
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 100 0 100 255
+	PlayAlertSound 3 300
+	PlayEffect Pink
+	MinimapIcon 0 Pink Circle
+	
+Show # Omens
+	Class == "Omen"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 1 Red Star
+	
+Show # Expedition 
+	Class == "Expedition Logbooks"
+	SetFontSize 45
+	SetTextColor 255 85 85 255
+	SetBackgroundColor 61 8 8 255
+	SetBorderColor 255 85 85 255
+	MinimapIcon 1 Purple UpsideDownHouse
+	PlayAlertSound 3 300	
+	
+Show # Expedition-Artifacts
+  BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Sun Artifact" " Order Artifact"
+	SetFontSize 45
+	SetTextColor 255 85 85 255
+	SetBackgroundColor 61 8 8 255
+	SetBorderColor 255 85 85 255
+	MinimapIcon 1 Purple UpsideDownHouse
+	
+Show # Vault Keys
+	Class == "Vault Keys"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	
+Show # Trial Coins
+	Class == "Trial Coins"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 180 0 255 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	
+Show # Inscribed Ultimatum
+	BaseType == "Inscribed Ultimatum" 
+	SetFontSize 45
+	SetTextColor 255 0 255 255
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 100 0 100 255
+	PlayAlertSound 3 300
+	PlayEffect Pink
+	MinimapIcon 0 Pink Circle
+	
+Show # Relics
+	Class == "Relic"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 2 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Star
+
+Show # Soul Core Items
+	BaseType == "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Jiquani" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl"
+	SetFontSize 45
+  SetTextColor 255 0 0
+  SetBackgroundColor 255 255 255
+  SetBorderColor 255 0 0
+  PlayAlertSound 1 300
+	MinimapIcon 0 Cyan Square
+	PlayEffect Cyan	
+
+Show # Pinnacle Keys
+	Class == "Pinnacle Keys"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 2 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Star
+
 Show # Runes
-	BaseType "Rune"
+	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Iron Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
 	SetFontSize 45
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
@@ -19,16 +216,16 @@ Show # Runes
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 	
-	Show # Runes
-	BaseType "Charm"
+Show # Charms
+	Class == "Charm"
 	SetFontSize 45
-	SetTextColor 127 9 255 255
-	SetBorderColor 127 9 255 255
-	SetFontSize 45
+	SetTextColor 191 0 255
+	SetBorderColor 191 0 255
+	SetBackgroundColor  20 20 0
 	MinimapIcon 0 Purple Circle
 	PlayEffect Purple
 	
-Show # CURRENCY - GOLD
+Show # GoldLarge
 	BaseType == "Gold"
 	StackSize >= 150
 	SetFontSize 45
@@ -45,15 +242,101 @@ Show # GOLDsmall
 	SetBackgroundColor 20 20 0 180
 	MinimapIcon 2 Grey Cross
 	
-	Show # Currency
-	BaseType == "Uncut Skill Gem" "Uncut Support Gem"
+Show # Tablets
+	Class == "Tablet"
 	SetFontSize 45
-	SetTextColor 0 255 0 255
-	SetBorderColor 0 255 0
-	SetBackgroundColor 0 0 0
-	PlayEffect Green
-	MinimapIcon 0 Green Circle
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
+  SetBorderColor 255 255 0
+	PlayAlertSound 2 300
+	MinimapIcon 2 Yellow Square	
+
+Show # Catalysts
+	Class == "Stackable Currency"
+	BaseType == "Adaptive Catalyst" "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Neural Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 255 83 83 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 13 300
+	MinimapIcon 1 Orange Moon
+
+Show # Distilled
+	Class == "Stackable Currency"
+	BaseType == "Distilled Despair" "Distilled Disgust" "Distilled Envy" "Distilled Fear" "Distilled Greed" "Distilled Guilt" "Distilled Ire" "Distilled Isolation" "Distilled Paranoia" "Distilled Suffering"
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 255 0 0 255
+	SetBorderColor 0 0 0 255
+	SetFontSize 45
+	PlayAlertSound 1 300
+	MinimapIcon 0 Red Pentagon
+	PlayEffect Red 
+
+Show # Essence High
+	Class == "Stackable Currency"
+	BaseType "Greater Essence of"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 2 300
+	PlayEffect Red
+	MinimapIcon 1 Red Circle
 	
+Show # Essence Low
+  Class == "Stackable Currency"
+	BaseType "Essence of"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+Show # Fossil High
+	Class == "Stackable Currency"
+	BaseType == "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+	
+Show # Fossil Low
+	Class == "Stackable Currency"
+	BaseType "Fossil"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 249 150 25 255
+	PlayEffect White
+	MinimapIcon 2 White Circle
+  PlayAlertSound 2 300
+
+Show # CURRENCY - MIRROR OF KALANDRA
+  Class == "Stackable Currency"
+  BaseType "Mirror of Kalandra"
+  SetTextColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetBorderColor 255 0 0 255
+  SetFontSize 45
+  PlayAlertSound ShMirror 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+	
+Show # CURRENCY - High Value
+  Class == "Stackable Currency"
+  BaseType == "Exalted Orb" "Divine Orb" "Orb of Alchemy" "Vaal Orb" "Regal Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism"
+  SetTextColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetBorderColor 255 0 0 255
+  SetFontSize 45
+  PlayAlertSound ShExalted 300
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red	
+
 Show # Currency
 	Class == "Stackable Currency"
 	SetFontSize 45
@@ -63,7 +346,25 @@ Show # Currency
 	PlayEffect Red
 	MinimapIcon 0 Orange Circle
 	
-	Show # uniques
+Show # Uncut
+	BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	PlayEffect Green
+	MinimapIcon 0 Green Circle
+
+Show # Gems
+	Class == "Skill Gems" "Support Gems"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetBorderColor 255 0 0 255
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	
+Show # Uniques
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 255 255 255 255
@@ -73,12 +374,30 @@ Show # Currency
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Star
 
-Show # rares
+	Show # Rare Jewellery
+	Rarity  Rare
+	Class == "Amulets" "Rings" "Belts"
+	SetFontSize 45
+	SetTextColor 0 75 250 255
+	SetBackgroundColor 0 80 30 255
+	SetBorderColor 0 255 1
+  MinimapIcon 1 Yellow Triangle
+
+Show # Rares
 	Rarity Rare
 	SetFontSize 45
 	SetBackgroundColor 0 80 30 255
 	SetBorderColor 0 255 1
 	MinimapIcon 2 Yellow Square
+	
+Show # Magic Jewellery
+	Rarity  Magic
+	Class == "Amulets" "Rings" "Belts"
+	SetFontSize 45
+	SetTextColor 0 75 250 255
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 0 20 40 255
+  MinimapIcon 1 Blue Triangle
 	
 Show # Magic
 	Rarity Magic
@@ -87,12 +406,19 @@ Show # Magic
 	SetBorderColor 0 75 250 255
 	SetBackgroundColor 0 20 40 255
 	
+Show # Normal Jewellery
+	Rarity Normal Magic
+	Class == "Amulets" "Rings" "Belts"
+	SetFontSize 45
+	SetTextColor 180 180 180
+	SetBackgroundColor 0 0 0
+  SetBorderColor 180 180 180
+  MinimapIcon 1 White Triangle
 	
 Show # Normal
 	Rarity Normal
-	SetFontSize 30
+	SetFontSize 35
 	SetTextColor 255 255 255
-	
 
 Show # SAFETY ALL NON-FILTERED ITEMS
 	SetFontSize 45
