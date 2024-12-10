@@ -42,5 +42,5 @@ Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
 
 ## To install
 - In game: ESC -> Options -> Game Tab -> Folder Icon
-- Put the filter file from the download in that folder and click refresh in game
+- Put the filter file from the download in that folder, Select SCplebs from the dropdown and click refresh in game
 ![Install](https://i.imgur.com/oUAZUsb.png)
