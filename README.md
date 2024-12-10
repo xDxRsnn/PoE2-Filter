@@ -9,9 +9,11 @@ Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
  - Hide nothing
  - Increased font size of all items to the max 
  - Light Beams + Minimap Icons + Sounds
+ - Sockets
+ - Quality
  - Quest Items
  - Wisdom Scrolls 
- - Maps - White, Yellow, Red
+ - Maps/Waystones - White, Yellow, Red
  - Simulacrum/Splinters
  - Breaschstone/Splinters
  - Map Fragments
@@ -22,6 +24,7 @@ Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
  - Trial Stuff - Coins, Inscribed Ultimatum
  - Relics
  - Trial of Chaos/Soul Core Items
+ - Magic/Rare Jewels
  - The Burning Monolith/Pinnacle Keys
  - Runes
  - Charms
@@ -33,6 +36,7 @@ Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
  - Fossil
  - Currencies
  - Gems/Skill/Support/Uncut
+ - Elite/Expert Bases
  - Uniques, Rares, Magic, Normal
 
 ## To install
