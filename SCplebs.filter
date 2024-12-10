@@ -3,6 +3,23 @@
 # Discord: #retrocro
 #=================================================
 
+Show # Superior and Quality
+  SetFontSize 45
+  Quality > 0
+  SetBorderColor 210 0 0
+
+Show # 1 Socket Workaround
+  Sockets == S
+  SetBorderColor 30 255 160 255
+  SetFontSize 45
+	PlayEffect Green Temp
+
+Show # 2 Socket Workaround
+  Sockets == SS
+  SetBorderColor 30 255 160 255
+  SetFontSize 45
+	PlayEffect Green Temp
+
 Show # QUEST ITEMS
   Class == "Quest Items"
 	SetTextColor 0 255 54 255
@@ -21,14 +38,13 @@ Show # CURRENCY - SCROLL OF WISDOM
 	
 Show # Red Maps High
 	Class == "Waystones"
-	WaystoneTier >= 11
-	WaystoneTier <= 13
+	WaystoneTier >= 14
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 235 235 235 255
 	PlayAlertSound 5 300
-	PlayEffect Yellow
-	MinimapIcon 1 Red Square
+	PlayEffect Red
+	MinimapIcon 1 Red Triangle
 
 Show # Red Maps Low
 	Class == "Waystones"
@@ -37,8 +53,8 @@ Show # Red Maps Low
 	SetFontSize 45
   SetTextColor 0 0 0 255
   SetBackgroundColor 200 200 200 255
-  PlayEffect Yellow
-  MinimapIcon 1 Red Square
+  PlayEffect Red
+  MinimapIcon 1 Red Star
   PlayAlertSound 5 300
 	
 Show # Yellow Maps
@@ -60,7 +76,7 @@ Show # White Maps
   SetTextColor 255 255 255 255
   SetBackgroundColor 20 20 0 255
   PlayEffect White
-  MinimapIcon 1 White Square
+  MinimapIcon 1 White Hexagon
   PlayAlertSound 4 300
 	
 Show # Simulacrum
@@ -103,7 +119,7 @@ Show # Splinters-Low
   PlayAlertSound 14 300
 	MinimapIcon 1 Blue Kite
 	
-Show # Map Fragments
+Show # All Map Fragments
 	Class == "Map Fragments"
 	SetFontSize 45
 	SetTextColor 180 0 255 255
@@ -182,12 +198,29 @@ Show # Inscribed Ultimatum
 Show # Relics
 	Class == "Relic"
 	SetFontSize 45
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 175 96 37 255
+	SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+	SetBackgroundColor 98 16 117
+  PlayEffect Cyan
 	PlayAlertSound 2 300
-	PlayEffect Blue
-	MinimapIcon 1 Blue Star
+  MinimapIcon 2 Cyan Triangle
+	
+Show # Rare Jewels
+	Class "Jewel"
+	Rarity Rare
+	SetTextColor 0 240 190
+	SetBorderColor 0 240 190
+	SetFontSize 45
+	MinimapIcon 2 Cyan Triangle
+	PlayEffect Cyan
+	
+Show # Magic Jewels
+  Class "Jewel"
+  Rarity Magic
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  PlayEffect Cyan Temp
 
 Show # Soul Core Items
 	BaseType == "Soul Core of Atmohua" "Soul Core of Azcapa" "Soul Core of Cholotl" "Soul Core of Citaqualotl" "Soul Core of Jiquani" "Soul Core of Opiloti" "Soul Core of Puhuarte" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zalatl"
@@ -230,12 +263,12 @@ Show # Charms
 	
 Show # GoldLarge
 	BaseType == "Gold"
-	StackSize >= 150
+	StackSize >= 250
 	SetFontSize 45
 	SetTextColor 235 200 110 255
 	SetBorderColor 235 200 110 255
 	SetBackgroundColor 20 20 0 255
-	MinimapIcon 1 Red Cross
+	MinimapIcon 0 Yellow Circle
 	
 Show # GOLDsmall
 	BaseType == "Gold"
@@ -243,7 +276,7 @@ Show # GOLDsmall
 	SetTextColor 180 180 180 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 20 20 0 180
-	MinimapIcon 2 Grey Cross
+	MinimapIcon 2 Grey Circle
 	
 Show # Tablets
 	Class == "Tablet"
@@ -351,35 +384,46 @@ Show # CURRENCY - High Value
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red	
 	
+Show # CURRENCY - Mid Value
+  Class == "Stackable Currency"
+  BaseType ==  "Orb of Chance" "Lesser Jeweller's Orb" "Exotic Coinage" "Glassblower's Bauble"
+  SetTextColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetBorderColor 255 0 0 255
+  SetFontSize 45
+	PlayAlertSound 6 300
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red	
+
 Show # ShardsHigh
   Class "Currency"
   BaseType "Horizon Shard" "Binding Shard" "Regal Shard" "Engineer's Shard" "Alchemy Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Chaos Shard" "Exalted Shard" "Artificer's Shard"
 	SetFontSize 45
-  SetTextColor 0 0 0 255
-  SetBorderColor 170 158 130 255
-  SetBackgroundColor 255 255 255 150
+  SetTextColor 210 0 220 
+  SetBorderColor 210 0 220 
+  SetBackgroundColor 255 255 255
 	PlayEffect Grey
 	PlayAlertSound 2 300
-  MinimapIcon 2 Grey Circle
+  MinimapIcon 0 Pink Circle
 	
 Show # ShardsLow
 	Class == "Stackable Currency"
   BaseType == "Alteration Shard" "Transmutation Shard" "Chance Shard"
-	SetFontSize 30
+	SetFontSize 45
   SetTextColor 0 0 0 255
   SetBorderColor 170 158 130 255
   SetBackgroundColor 255 255 255 150
 	PlayAlertSound 2 300
   MinimapIcon 2 Grey Circle
 
-Show # Currency
+Show # Currency - The Remaining Currency
 	Class == "Stackable Currency"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
 	PlayAlertSound 1 300
-	PlayEffect Red
+	PlayEffect Orange
 	MinimapIcon 0 Orange Circle
 	
 Show # Uncut
@@ -401,6 +445,56 @@ Show # Gems
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 	
+Show # Summoner Scepters
+BaseType == "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+SetTextColor 200 150 255 255
+SetBorderColor 200 150 255 255
+SetBackgroundColor 40 30 50 255
+SetFontSize 45
+PlayAlertSound 4 300
+PlayEffect Purple
+MinimapIcon 2 Purple Circle
+
+Show # Expert/Elite Body Armors
+BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Serpentscale Coat" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Cloaked Mail" "Expert Cloaked Mail" "Expert Scale Mail" "Expert Pelt Mantle" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Scalper's Jacket"
+SetTextColor 200 150 255 255
+SetBorderColor 200 150 255 255
+SetBackgroundColor 40 30 50 255
+SetFontSize 45
+PlayAlertSound 4 300
+PlayEffect Purple
+MinimapIcon 2 Purple Circle
+
+Show # Expert/Elite Gloves
+BaseType == "Expert Riveted Mitts" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Intricate Gloves" "Expert Ringmail Gauntlets" "Expert Layered Gauntlets" "Expert Doubled Gauntlets" "Expert Rope Cuffs" "Expert Aged Cuffs" "Expert Goldcast Cuffs" "Expert Gauze Wraps" "Expert Linen Wraps" "Expert Spiral Wraps"
+SetTextColor 200 150 255 255
+SetBorderColor 200 150 255 255
+SetBackgroundColor 40 30 50 255
+SetFontSize 45
+PlayAlertSound 4 300
+PlayEffect Purple
+MinimapIcon 2 Purple Circle
+
+Show # Expert/Elite Boots
+BaseType == "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Laced Boots" "Expert Steeltoe Boots" "Expert Lizardscale Boots" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals" "Expert Mail Sabatons" "Expert Braced Sabatons" "Expert Stacked Sabatons" "Expert Padded Leggings" "Expert Secured Leggings" "Expert Pelt Leggings" "Expert Frayed Shoes" "Expert Threaded Shoes" "Expert Hunting Shoes"
+SetTextColor 200 150 255 255
+SetBorderColor 200 150 255 255
+SetBackgroundColor 40 30 50 255
+SetFontSize 45
+PlayAlertSound 4 300
+PlayEffect Purple
+MinimapIcon 2 Purple Circle
+
+Show # Expert/Elite Helms
+BaseType == "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Felt Cap" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Expert Guarded Helm" "Expert Cowled Helm" "Expert Shielded Helm" "Expert Horned Crown" "Expert Martyr Crown" "Expert Heavy Crown" "Expert Face Mask" "Expert Veiled Mask" "Expert Tribal Mask"
+SetTextColor 200 150 255 255
+SetBorderColor 200 150 255 255
+SetBackgroundColor 40 30 50 255
+SetFontSize 45
+PlayAlertSound 4 300
+PlayEffect Purple
+MinimapIcon 2 Purple Circle
+	
 Show # Uniques
 	Rarity Unique
 	SetFontSize 45
@@ -415,16 +509,17 @@ Show # Uniques
 	Rarity  Rare
 	Class == "Amulets" "Rings" "Belts"
 	SetFontSize 45
-	SetTextColor 0 75 250 255
-	SetBackgroundColor 0 80 30 255
-	SetBorderColor 0 255 1
+  SetTextColor 255 255 119
+	SetBorderColor 255 255 119
+	SetBackgroundColor 0 0 0
   MinimapIcon 1 Yellow Triangle
 
 Show # Rares
 	Rarity Rare
 	SetFontSize 45
-	SetBackgroundColor 0 80 30 255
-	SetBorderColor 0 255 1
+  SetTextColor 255 255 119
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 119
 	MinimapIcon 2 Yellow Square
 	
 Show # Magic Jewellery
