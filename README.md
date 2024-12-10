@@ -41,5 +41,6 @@ Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
  - Uniques, Rares, Magic, Normal
 
 ## To install
-Put the filter file in the folder that opens from the settings screen and click refresh.
+- In game: ESC -> Options -> Game Tab -> Folder Icon
+- Put the filter file from the download in that folder and click refresh in game
 ![Install](https://i.imgur.com/lUCGxYZ.png)
