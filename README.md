@@ -36,6 +36,7 @@ Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
  - Fossil
  - Currencies
  - Gems/Skill/Support/Uncut
+ - Summoning Scepters
  - Elite/Expert Bases
  - Uniques, Rares, Magic, Normal
 
