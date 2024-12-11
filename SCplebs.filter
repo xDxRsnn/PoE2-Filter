@@ -3,23 +3,6 @@
 # Discord: #retrocro
 #=================================================
 
-Show # Superior and Quality
-  SetFontSize 45
-  Quality > 0
-  SetBorderColor 210 0 0
-
-Show # 1 Socket Workaround
-  Sockets == S
-  SetBorderColor 30 255 160 255
-  SetFontSize 45
-	PlayEffect Green Temp
-
-Show # 2 Socket Workaround
-  Sockets == SS
-  SetBorderColor 30 255 160 255
-  SetFontSize 45
-	PlayEffect Green Temp
-
 Show # QUEST ITEMS
   Class == "Quest Items"
 	SetTextColor 0 255 54 255
@@ -504,6 +487,23 @@ Show # Uniques
 	PlayAlertSound 1 300
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Star
+	
+Show # Superior and Quality
+  SetFontSize 45
+  Quality > 0
+  SetBorderColor 210 0 0
+
+Show # 1 Socket Workaround
+  Sockets == S
+  SetBorderColor 30 255 160 255
+  SetFontSize 45
+	PlayEffect Green Temp
+
+Show # 2 Socket Workaround
+  Sockets == SS
+  SetBorderColor 30 255 160 255
+  SetFontSize 45
+	PlayEffect Green Temp
 
 	Show # Rare Jewellery
 	Rarity  Rare
