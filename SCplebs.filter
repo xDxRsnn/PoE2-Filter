@@ -436,33 +436,33 @@ SetBackgroundColor 40 30 50 255
 SetFontSize 45
 MinimapIcon 2 Purple Circle
 
-Show # Expert/Elite Body Armors
-BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Serpentscale Coat" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Cloaked Mail" "Expert Cloaked Mail" "Expert Scale Mail" "Expert Pelt Mantle" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Scalper's Jacket"
-SetTextColor 200 150 255 255
-SetBorderColor 200 150 255 255
-SetBackgroundColor 40 30 50 255
-SetFontSize 35
+#Show # Expert/Elite Body Armors
+#BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Serpentscale Coat" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Cloaked Mail" "Expert Cloaked Mail" "Expert Scale Mail" "Expert Pelt Mantle" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Scalper's Jacket"
+#SetTextColor 200 150 255 255
+#SetBorderColor 200 150 255 255
+#SetBackgroundColor 40 30 50 255
+#SetFontSize 35
 
-Show # Expert/Elite Gloves
-BaseType == "Expert Riveted Mitts" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Intricate Gloves" "Expert Ringmail Gauntlets" "Expert Layered Gauntlets" "Expert Doubled Gauntlets" "Expert Rope Cuffs" "Expert Aged Cuffs" "Expert Goldcast Cuffs" "Expert Gauze Wraps" "Expert Linen Wraps" "Expert Spiral Wraps"
-SetTextColor 200 150 255 255
-SetBorderColor 200 150 255 255
-SetBackgroundColor 40 30 50 255
-SetFontSize 35
+#Show # Expert/Elite Gloves
+#BaseType == "Expert Riveted Mitts" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Intricate Gloves" "Expert Ringmail Gauntlets" "Expert Layered Gauntlets" "Expert Doubled Gauntlets" "Expert Rope Cuffs" "Expert Aged Cuffs" "Expert Goldcast Cuffs" "Expert Gauze Wraps" "Expert Linen Wraps" "Expert Spiral Wraps"
+#SetTextColor 200 150 255 255
+#SetBorderColor 200 150 255 255
+#SetBackgroundColor 40 30 50 255
+#SetFontSize 35
 
-Show # Expert/Elite Boots
-BaseType == "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Laced Boots" "Expert Steeltoe Boots" "Expert Lizardscale Boots" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals" "Expert Mail Sabatons" "Expert Braced Sabatons" "Expert Stacked Sabatons" "Expert Padded Leggings" "Expert Secured Leggings" "Expert Pelt Leggings" "Expert Frayed Shoes" "Expert Threaded Shoes" "Expert Hunting Shoes"
-SetTextColor 200 150 255 255
-SetBorderColor 200 150 255 255
-SetBackgroundColor 40 30 50 255
-SetFontSize 35
+#Show # Expert/Elite Boots
+#BaseType == "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Laced Boots" "Expert Steeltoe Boots" "Expert Lizardscale Boots" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals" "Expert Mail Sabatons" "Expert Braced Sabatons" "Expert Stacked Sabatons" "Expert Padded Leggings" "Expert Secured Leggings" "Expert Pelt Leggings" "Expert Frayed Shoes" "Expert Threaded Shoes" "Expert Hunting Shoes"
+#SetTextColor 200 150 255 255
+#SetBorderColor 200 150 255 255
+#SetBackgroundColor 40 30 50 255
+#SetFontSize 35
 
-Show # Expert/Elite Helms
-BaseType == "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Felt Cap" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Expert Guarded Helm" "Expert Cowled Helm" "Expert Shielded Helm" "Expert Horned Crown" "Expert Martyr Crown" "Expert Heavy Crown" "Expert Face Mask" "Expert Veiled Mask" "Expert Tribal Mask"
-SetTextColor 200 150 255 255
-SetBorderColor 200 150 255 255
-SetBackgroundColor 40 30 50 255
-SetFontSize 35
+#Show # Expert/Elite Helms
+#BaseType == "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Felt Cap" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Expert Guarded Helm" "Expert Cowled Helm" "Expert Shielded Helm" "Expert Horned Crown" "Expert Martyr Crown" "Expert Heavy Crown" "Expert Face Mask" "Expert Veiled Mask" "Expert Tribal Mask"
+#SetTextColor 200 150 255 255
+#SetBorderColor 200 150 255 255
+#SetBackgroundColor 40 30 50 255
+#SetFontSize 35
 	
 Show # Uniques
 	Rarity Unique
