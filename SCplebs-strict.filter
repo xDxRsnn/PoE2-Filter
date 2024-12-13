@@ -326,7 +326,7 @@ Show # GoldLarge
 	
 Show # GOLDsmall
 	BaseType == "Gold"
-	SetFontSize 45
+	SetFontSize 25
 	SetTextColor 180 180 180 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 20 20 0 180
