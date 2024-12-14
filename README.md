@@ -40,6 +40,11 @@ Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
  - Elite/Expert Bases
  - Uniques, Rares, Magic, Normal
 
+## New Strict Filter
+Re-tiered some stuff for blast mode
+![PoE2 Strict1](https://i.imgur.com/7W1kP4C.png)
+![PoE2 Strict2](https://i.imgur.com/2lu4kZB.png)
+
 ## To install
 - In game: ESC -> Options -> Game Tab -> Folder Icon
 - Put the filter file from the download in that folder, Select SCplebs from the dropdown and click refresh in game
