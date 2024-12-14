@@ -505,11 +505,12 @@ Show # Currency - The Remaining Currency
 	MinimapIcon 0 Orange Circle
 	
 #--------------------------
-# Gems
+# Uncut Skill Gem
 #--------------------------
 
-Show # Uncut
-	BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+Show # Uncut Skill Gem
+	BaseType == "Uncut Skill Gem"
+	ItemLevel >= 15
 	SetFontSize 45
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
@@ -517,6 +518,94 @@ Show # Uncut
 	PlayEffect Green
 	PlayAlertSound 10 300
 	MinimapIcon 0 Green Circle
+	
+Show # Uncut Skill Gem
+	BaseType == "Uncut Skill Gem"
+  ItemLevel >= 10
+	SetFontSize 35
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	MinimapIcon 1 Green Circle
+	
+Show # Uncut Skill Gem
+	BaseType == "Uncut Skill Gem"
+	ItemLevel < 10
+	SetFontSize 20
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	MinimapIcon 2 Green Circle
+
+#--------------------------
+# Uncut Support Gem
+#--------------------------
+
+Show # Uncut Skill Gem
+	BaseType == "Uncut Support Gem"
+	ItemLevel >= 3
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	PlayEffect Green
+	PlayAlertSound 10 300
+	MinimapIcon 0 Green Circle
+	
+Show # Uncut Skill Gem
+	BaseType == "Uncut Support Gem"
+  ItemLevel >= 2
+	SetFontSize 35
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	MinimapIcon 1 Green Circle
+	
+Show # Uncut Skill Gem
+	BaseType == "Uncut Support Gem"
+	ItemLevel < 2
+	SetFontSize 20
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	MinimapIcon 2 Green Circle
+	
+#--------------------------
+# Uncut Spirit Gem
+#--------------------------
+	
+Show # Uncut Skill Gem
+	BaseType == "Uncut Spirit Gem"
+	ItemLevel >= 15
+	SetFontSize 45
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	PlayEffect Green
+	PlayAlertSound 10 300
+	MinimapIcon 0 Green Circle
+	
+Show # Uncut Skill Gem
+	BaseType == "Uncut Spirit Gem"
+  ItemLevel >= 10
+	SetFontSize 35
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	MinimapIcon 1 Green Circle
+	
+Show # Uncut Skill Gem
+	BaseType == "Uncut Spirit Gem"
+	ItemLevel < 10
+	SetFontSize 20
+	SetTextColor 0 255 0 255
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+	MinimapIcon 2 Green Circle
+
+#--------------------------
+# Gems
+#--------------------------
 
 Show # Gems
 	Class == "Skill Gems" "Support Gems"
@@ -551,7 +640,7 @@ Show # Good Bases ilvl 75 - Rare
   SetBorderColor 255 255 119
   SetBackgroundColor 30 30 30
   SetFontSize 45
-  MinimapIcon 2 Pink Circle
+  MinimapIcon 0 Pink Circle
 	PlayAlertSound 2 300
 	PlayEffect Pink
 
@@ -563,7 +652,7 @@ Show # Good  Bases ilvl 75 - Magic
   SetBorderColor  136 136 255
   SetBackgroundColor 255 255 255
   SetFontSize 45
-  MinimapIcon 2 Pink Circle
+  MinimapIcon 0 Pink Circle
 	PlayAlertSound 2 300
 	PlayEffect Pink
 
@@ -575,7 +664,7 @@ Show # Good Bases ilvl 75 - Normal
   SetBorderColor 0 0 0
   SetBackgroundColor 255 255 255
   SetFontSize 45
-  MinimapIcon 2 Pink Circle
+  MinimapIcon 0 Pink Circle
 	PlayAlertSound 2 300
 	PlayEffect Pink
 	
@@ -589,10 +678,7 @@ Show # Good Bases - Rare
   SetTextColor 254 128 222
   SetBorderColor 255 255 119
   SetBackgroundColor 30 30 30
-  SetFontSize 45
-  MinimapIcon 2 Pink Circle
-	PlayEffect Pink
-
+  SetFontSize 35
 
 Show # Good  Bases - Magic
   Rarity Magic
@@ -600,10 +686,8 @@ Show # Good  Bases - Magic
   SetTextColor 254 128 222
   SetBorderColor  136 136 255
   SetBackgroundColor 255 255 255
-  SetFontSize 45
+  SetFontSize 35
   MinimapIcon 2 Pink Circle
-	PlayAlertSound 2 300
-	PlayEffect Pink
 
 Show # Good Bases - Normal
   Rarity Normal
@@ -611,10 +695,8 @@ Show # Good Bases - Normal
   SetTextColor 254 128 222
   SetBorderColor 0 0 0
   SetBackgroundColor 255 255 255
-  SetFontSize 45
+  SetFontSize 35
   MinimapIcon 2 Pink Circle
-	PlayAlertSound 2 300
-	PlayEffect Pink
 	
 #--------------------------
 # Show Uniques
