@@ -453,7 +453,7 @@ Show # Highest Value
 	
 Show # CURRENCY - High Value
   Class == "Stackable Currency"
-  BaseType == "Chaos Orb" "Exalted Orb" "Divine Orb" "Orb of Alchemy" "Vaal Orb" "Regal Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal" "Artificer's Orb"
+  BaseType == "Chaos Orb" "Exalted Orb" "Divine Orb" "Orb of Annulment" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Journeyman Cartographer's Seal" "Apprentice Cartographer's Seal" "Master Cartographer's Seal" "Exotic Coinage"
   SetTextColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
   SetBorderColor 255 0 0 255
@@ -464,45 +464,38 @@ Show # CURRENCY - High Value
 	
 Show # CURRENCY - Mid Value
   Class == "Stackable Currency"
-  BaseType ==  "Orb of Chance" "Lesser Jeweller's Orb" "Exotic Coinage" "Glassblower's Bauble"
-  SetTextColor 255 0 0 255
-  SetBackgroundColor 255 255 255 255
-  SetBorderColor 255 0 0 255
-  SetFontSize 45
-	PlayAlertSound 6 300
-	MinimapIcon 0 Red Triangle
-	PlayEffect Red	
-
-Show # ShardsHigh
-  Class "Currency"
-  BaseType "Horizon Shard" "Binding Shard" "Regal Shard" "Engineer's Shard" "Alchemy Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Chaos Shard" "Exalted Shard" "Artificer's Shard"
-	SetFontSize 45
-  SetTextColor 210 0 220 
-  SetBorderColor 210 0 220 
-  SetBackgroundColor 255 255 255
-	PlayEffect Grey
-	PlayAlertSound 2 300
-  MinimapIcon 0 Pink Circle
-	
-Show # ShardsLow
-	Class == "Stackable Currency"
-  BaseType == "Alteration Shard" "Transmutation Shard" "Chance Shard"
-	SetFontSize 45
-  SetTextColor 0 0 0 255
-  SetBorderColor 170 158 130 255
-  SetBackgroundColor 255 255 255 150
-	PlayAlertSound 2 300
-  MinimapIcon 2 Grey Circle
-
-Show # Currency - The Remaining Currency
-	Class == "Stackable Currency"
-	SetFontSize 45
+  BaseType ==  "Glassblower's Bauble" "Vaal Orb" "Orb of Alchemy" "Regal Orb"
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
-	PlayAlertSound 12 200
+  SetFontSize 40
+	PlayAlertSound 1 200
+	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
-	MinimapIcon 0 Orange Circle
+
+Show # ShardsHigh
+  Class "Currency"
+  BaseType "Horizon Shard" "Binding Shard" "Regal Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Chance Shard"
+	SetFontSize 40
+  SetTextColor 255 0 0 255
+  SetBackgroundColor 0 0 0
+  SetBorderColor 255 0 0 255
+	PlayEffect Grey
+  MinimapIcon 0 Grey Circle
+	
+Show # ShardsLow
+	Class == "Stackable Currency"
+  BaseType == "Alteration Shard" "Transmutation Shard" "Artificer's Shard" "Alchemy Shard"  "Chaos Shard"
+	SetFontSize 25
+  SetTextColor 0 0 0 255
+  SetBorderColor 170 158 130 255
+  SetBackgroundColor 255 255 255 100
+
+Show # Currency - The Remaining Currency
+	Class == "Stackable Currency"
+	SetFontSize 30
+  SetTextColor 0 0 0 255
+  SetBackgroundColor 255 255 255 150
 	
 #--------------------------
 # Uncut Skill Gem
@@ -650,7 +643,7 @@ Show # Good  Bases ilvl 75 - Magic
   AreaLevel >= 75
   SetTextColor 254 128 222
   SetBorderColor  136 136 255
-  SetBackgroundColor 255 255 255
+  SetBackgroundColor 30 30 30
   SetFontSize 45
   MinimapIcon 0 Pink Circle
 	PlayAlertSound 2 300
@@ -662,7 +655,7 @@ Show # Good Bases ilvl 75 - Normal
   AreaLevel >= 75
   SetTextColor 254 128 222
   SetBorderColor 0 0 0
-  SetBackgroundColor 255 255 255
+  SetBackgroundColor 30 30 30
   SetFontSize 45
   MinimapIcon 0 Pink Circle
 	PlayAlertSound 2 300
@@ -674,7 +667,7 @@ Show # Good Bases ilvl 75 - Normal
 	
 Show # Good Bases - Rare
   Rarity Rare
-  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt"
+  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Rusted Greathelm"
   SetTextColor 254 128 222
   SetBorderColor 255 255 119
   SetBackgroundColor 30 30 30
@@ -685,7 +678,7 @@ Show # Good  Bases - Magic
   BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt"
   SetTextColor 254 128 222
   SetBorderColor  136 136 255
-  SetBackgroundColor 255 255 255
+  SetBackgroundColor 30 30 30
   SetFontSize 35
   MinimapIcon 2 Pink Circle
 
@@ -694,7 +687,7 @@ Show # Good Bases - Normal
   BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt"
   SetTextColor 254 128 222
   SetBorderColor 0 0 0
-  SetBackgroundColor 255 255 255
+  SetBackgroundColor 30 30 30
   SetFontSize 35
   MinimapIcon 2 Pink Circle
 	
