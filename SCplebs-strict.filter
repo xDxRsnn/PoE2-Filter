@@ -25,7 +25,7 @@ Show # CURRENCY - SCROLL OF WISDOM
 	BaseType == "Scroll of Wisdom"
 	SetTextColor 32 255 0
 	SetBorderColor 100 50 30 255
-	SetFontSize 45
+	SetFontSize 20
 	
 #--------------------------
 # Show Maps
@@ -304,6 +304,7 @@ Show # Runes
 
 Show # Charms
 	Class == "Charm"
+	Quality > 0
 	SetFontSize 45
 	SetTextColor 191 0 255
 	SetBorderColor 191 0 255
@@ -311,6 +312,13 @@ Show # Charms
 	PlayAlertSound 16 300
 	MinimapIcon 0 Purple Circle
 	PlayEffect Purple
+
+Hide # Charms
+	Class == "Charm"
+	SetFontSize 45
+	SetTextColor 191 0 255
+	SetBorderColor 191 0 255
+	SetBackgroundColor  20 20 0
 
 #--------------------------
 # Gold
@@ -328,8 +336,8 @@ Show # GOLDsmall
 	BaseType == "Gold"
 	SetFontSize 25
 	SetTextColor 180 180 180 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 20 20 0 180
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 20 20 0 100
 	
 #--------------------------
 # Tablets
@@ -694,15 +702,48 @@ Show # Good Bases - Normal
 # Show Uniques
 #--------------------------	
 
-Show # Uniques
+Show # T1 Uniques
 	Rarity Unique
+	BaseType == "Heavy Belt" "Silk Slippers" "Armoured Cap" "Conqueror Plate" "Fine Bracers" "Ornate Belt" "Jewelled Gloves" "Incense Relic" "Time-Lost Diamond" "Ring" "Chiming Staff" "Utility Belt" "Grand Visage" "Grand Regalia" "Garment" "Furtive Wraps" "Crucible Tower Shield" "Ultimate Life Flask"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 175 96 37 255
 	PlayAlertSound 1 300
-	PlayEffect Yellow
-	MinimapIcon 0 Yellow Star
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show # T2 Uniques
+	Rarity Unique
+	BaseType == "Smuggler Coat" "Burnished Gauntlets" "Felt Cap" "Tribal Mask" "Ironclad Vestments" "Lattice Sandals" "Threaded Shoes" "Lace Hood" "Altar Robe" "Stone Tower Shield" "Velour Shoes" "Grand Manchettes" "Grand Cuisses"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 1 300
+	PlayEffect Orange
+	MinimapIcon 0 Orange Star
+	
+Show # Multi-Unique Bases
+	Rarity Unique
+	BaseType == "Gold Ring" "Stellar Amulet" "Solar Amulet" "Wide Belt" "Amethyst Ring" "Ruby Ring" "Topaz Ring" "Amber Amulet" "Emerald Ring" "Jade Amulet" "Lazuli Ring" "Sapphire Ring" "Gold Amulet" "Pearl Ring" "Crimson Amulet" "Lapis Amulet" "Rawhide Belt" "Azure Amulet" "Omen Crest Shield" "Chain Tiara" "Linen Wraps" "Silk Robe" "Explorer Armour" "Shrine Sceptre" "Moulded Mitts"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Star
+
+Show # Remaining Uniques
+	Rarity Unique
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 3 300
+	PlayEffect Brown
+	MinimapIcon 0 Brown Star
 	
 #--------------------------
 # Show sockets and quality
@@ -712,19 +753,18 @@ Show # Superior and Quality
   SetFontSize 45
   Quality > 0
   SetBorderColor 210 0 0
-
-Show # 1 Socket Workaround
-  Sockets == S
-  SetBorderColor 30 255 160 255
-  SetFontSize 45
-	PlayEffect Green Temp
-
+	
 Show # 2 Socket Workaround
   Sockets == SS
   SetBorderColor 30 255 160 255
   SetFontSize 45
 	PlayEffect Green Temp
-	
+
+Hide # 1 Socket Workaround
+  Sockets == S
+  SetBorderColor 30 255 160 255
+  SetFontSize 45
+
 #--------------------------
 # Hide Low Flasks in Maps
 #--------------------------
