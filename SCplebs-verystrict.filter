@@ -115,7 +115,7 @@ Show # Red Maps Low Normal
 # Yellow Maps
 #--------------------------
 
-Show # Yellow Maps Rare
+Hide # Yellow Maps Rare
 	Class == "Waystones"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
@@ -124,11 +124,9 @@ Show # Yellow Maps Rare
   SetTextColor 254 213 0
 	SetBorderColor 254 213 0
   SetBackgroundColor 255 215 0 125
-  PlayEffect Yellow
-  MinimapIcon 2 Yellow Square
-  PlayAlertSound 4 100
+  PlayEffect Yellow Temp
 	
-Show # Yellow Maps Magic
+Hide # Yellow Maps Magic
 	Class == "Waystones"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
@@ -137,11 +135,9 @@ Show # Yellow Maps Magic
   SetTextColor 0 0 254
 	SetBorderColor 0 0 254
   SetBackgroundColor 255 215 0 125
-  PlayEffect Yellow
-  MinimapIcon 2 Yellow Square
-  PlayAlertSound 4 100
+  PlayEffect Yellow Temp
 	
-Show # Yellow Maps Normal
+Hide # Yellow Maps Normal
 	Class == "Waystones"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
@@ -150,15 +146,13 @@ Show # Yellow Maps Normal
   SetTextColor 255 255 255
 	SetBorderColor 255 255 255
   SetBackgroundColor 255 215 0 125
-  PlayEffect Yellow
-  MinimapIcon 2 Yellow Square
-  PlayAlertSound 4 100
-	
+  PlayEffect Yellow Temp
+
 #--------------------------
 # White Maps
 #--------------------------
 
-Show # White Maps Rare
+Hide # White Maps Rare
 	Class == "Waystones"
 	WaystoneTier >= 1
 	WaystoneTier <= 5
@@ -169,7 +163,7 @@ Show # White Maps Rare
   SetBackgroundColor 255 255 255 125
   PlayEffect White Temp
 	
-Show # White Maps Magic
+Hide # White Maps Magic
 	Class == "Waystones"
 	WaystoneTier >= 1
 	WaystoneTier <= 5
@@ -180,7 +174,7 @@ Show # White Maps Magic
   SetBackgroundColor 255 255 255 125
   PlayEffect White Temp
 	
-Show # White Maps Normal
+Hide # White Maps Normal
 	Class == "Waystones"
 	WaystoneTier >= 1
 	WaystoneTier <= 5
@@ -361,22 +355,34 @@ Show # Relics
 # Jewels
 #--------------------------
 
+Show # Unique Jewels
+	Class == "Jewels"
+	Rarity Unique
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 1 300
+	MinimapIcon 0 Cyan Triangle
+	PlayEffect Cyan
+
 Show # Rare Jewels
-	Class "Jewel"
+	Class == "Jewels"
 	Rarity Rare
+	SetFontSize 45
 	SetTextColor 0 240 190
 	SetBorderColor 0 240 190
-	SetFontSize 45
-	MinimapIcon 2 Cyan Triangle
+	MinimapIcon 0 Cyan Triangle
 	PlayEffect Cyan
 	
 Show # Magic Jewels
-  Class "Jewel"
+	Class == "Jewels"
   Rarity Magic
+  SetFontSize 45
   SetTextColor 0 240 190
   SetBorderColor 0 240 190
-  SetFontSize 40
-  PlayEffect Cyan Temp
+  MinimapIcon 0 Cyan Triangle
+  PlayEffect Cyan
 
 #--------------------------
 # Soul Core Items
@@ -618,7 +624,7 @@ Hide # ShardsLow
   SetBorderColor 170 158 130 255
   SetBackgroundColor 255 255 255 100
 	
-	Hide # Low Tier
+Hide # Low Tier
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Artificer's Orb" "Lesser Jeweller's Orb" 
 	AreaLevel >= 70
 	SetFontSize 30
@@ -675,7 +681,7 @@ Hide # Uncut Skill Gem
 # Uncut Spirit Gem
 #--------------------------
 	
-Show # Uncut Skill Gem
+Show # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel >= 19
 	SetFontSize 45
@@ -686,7 +692,7 @@ Show # Uncut Skill Gem
 	PlayAlertSound 10 300
 	MinimapIcon 0 Green Circle
 	
-Show # Uncut Skill Gem
+Show # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel >= 18
 	SetFontSize 30
@@ -695,7 +701,7 @@ Show # Uncut Skill Gem
 	SetBackgroundColor 0 0 0
 	PlayEffect Green Temp
 	
-Hide # Uncut Skill Gem
+Hide # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
   ItemLevel >= 10
 	SetFontSize 35
@@ -703,7 +709,7 @@ Hide # Uncut Skill Gem
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
 	
-Hide # Uncut Skill Gem
+Hide # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel < 10
 	SetFontSize 20
@@ -715,7 +721,7 @@ Hide # Uncut Skill Gem
 # Uncut Support Gem
 #--------------------------
 
-Hide # Uncut Skill Gem
+Hide # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
 	ItemLevel >= 3
 	SetFontSize 45
@@ -724,7 +730,7 @@ Hide # Uncut Skill Gem
 	SetBackgroundColor 0 0 0
 	PlayEffect Green Temp
 	
-Hide # Uncut Skill Gem
+Hide # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
   ItemLevel >= 2
 	SetFontSize 35
@@ -732,7 +738,7 @@ Hide # Uncut Skill Gem
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
 	
-Hide # Uncut Skill Gem
+Hide # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
 	ItemLevel < 2
 	SetFontSize 20
@@ -754,18 +760,6 @@ Show # Gems
 	PlayEffect Red
 	
 #--------------------------
-# Show Summoner Scepters
-#--------------------------
-	
-#Show # Summoner Scepters
-#BaseType == "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
-#SetTextColor 200 150 255 255
-#SetBorderColor 200 150 255 255
-#SetBackgroundColor 40 30 50 255
-#SetFontSize 35
-#MinimapIcon 2 Purple Circle
-
-#--------------------------
 # Chance Orb Items
 #--------------------------
 
@@ -779,7 +773,6 @@ Show # Chance Orb Items
   SetFontSize 45
   MinimapIcon 2 Purple Triangle
 	PlayEffect Purple Temp
-
 
 #--------------------------
 # Good Bases ilvl 75+
@@ -851,18 +844,9 @@ Show # Good Bases - Normal
 # Bad Bases 
 #--------------------------
 
-Hide
-BaseType "Cultist"
-AreaLevel >= 65
-
-Hide
-BaseType "Cultist"
-AreaLevel >= 65
-
-Hide
-Rarity <= Magic
-Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows"
-AreaLevel >= 65
+Hide # Bad Bow Base
+  BaseType "Cultist"
+  AreaLevel >= 65
 	
 #--------------------------
 # Show Uniques
@@ -953,7 +937,7 @@ Hide # Non Superior Flasks
 	
 Hide # Non Rare in maps
   Class == "Gloves" "Boots" "Body Armours"  "Helmets" "Quivers" "Shields" "Foci" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
-	Rarity < Rare
+	Rarity <= Magic
 	AreaLevel >= 65
 
 #--------------------------
@@ -961,7 +945,7 @@ Hide # Non Rare in maps
 #--------------------------
 
 Show # Rare Jewellery
-	Rarity  Rare
+	Rarity Rare
 	Class == "Amulets" "Rings" "Belts"
 	SetFontSize 35
   SetTextColor 255 255 119
