@@ -625,7 +625,7 @@ Hide # ShardsLow
   SetBackgroundColor 255 255 255 100
 	
 Hide # Low Tier
-	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Artificer's Orb" "Lesser Jeweller's Orb" 
+	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Arcanist's Etcher" "Blacksmith's Whetstone" "Artificer's Orb" "Lesser Jeweller's Orb" 
 	AreaLevel >= 70
 	SetFontSize 30
   SetTextColor 0 0 0 255
@@ -652,7 +652,7 @@ Show # Uncut Skill Gem
 	PlayAlertSound 10 300
 	MinimapIcon 0 Green Circle
 
-Show # Uncut Skill Gem
+Hide # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
 	ItemLevel >= 18
 	SetFontSize 30
@@ -692,7 +692,7 @@ Show # Uncut Spirit Gem
 	PlayAlertSound 10 300
 	MinimapIcon 0 Green Circle
 	
-Show # Uncut Spirit Gem
+Hide # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel >= 18
 	SetFontSize 30
@@ -775,13 +775,13 @@ Show # Chance Orb Items
 	PlayEffect Purple Temp
 
 #--------------------------
-# Good Bases ilvl 75+
+# Good Bases ilvl 80+
 #--------------------------
 
-Show # Good Bases ilvl 75 - Rare
+Show # Good Bases ilvl 80 - Rare
   Rarity Rare
   BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
-  AreaLevel >= 75
+  AreaLevel >= 80
   SetTextColor 255 255 119
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30	
@@ -789,10 +789,10 @@ Show # Good Bases ilvl 75 - Rare
   MinimapIcon 2 Pink Circle
 	PlayEffect Pink Temp
 
-Show # Good  Bases ilvl 75 - Magic
+Show # Good  Bases ilvl 80 - Magic
   Rarity Magic
   BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
-  AreaLevel >= 75
+  AreaLevel >= 80
   SetTextColor 0 75 250 255
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30
@@ -800,10 +800,10 @@ Show # Good  Bases ilvl 75 - Magic
   MinimapIcon 2 Pink Circle
 	PlayEffect Pink Temp
 
-Show # Good Bases ilvl 75 - Normal
+Show # Good Bases ilvl 80 - Normal
   Rarity Normal
   BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
-  AreaLevel >= 75
+  AreaLevel >= 80
   SetTextColor 180 180 180
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30
@@ -822,6 +822,7 @@ Show # Good Bases - Rare
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30	
   SetFontSize 35
+	PlayEffect Pink Temp
 
 Show # Good  Bases - Magic
   Rarity Magic
@@ -830,6 +831,7 @@ Show # Good  Bases - Magic
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30
   SetFontSize 30
+	PlayEffect Pink Temp
 
 Show # Good Bases - Normal
   Rarity Normal
@@ -838,6 +840,7 @@ Show # Good Bases - Normal
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30
   SetFontSize 30
+	PlayEffect Pink Temp
 	
 	
 #--------------------------
