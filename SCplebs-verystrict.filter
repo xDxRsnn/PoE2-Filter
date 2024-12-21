@@ -36,9 +36,9 @@ Show # Red Maps High Rare
 	WaystoneTier >= 14
 	Rarity Rare
 	SetFontSize 45
-  SetTextColor 254 213 0
+  SetTextColor 251 255 0
 	SetBorderColor 254 213 0
-  SetBackgroundColor 150 0 0
+  SetBackgroundColor 255 89 89
 	PlayAlertSound 5 300
 	PlayEffect Red
 	MinimapIcon 1 Red Star
@@ -51,7 +51,7 @@ Show # Red Maps High Magic
 	SetFontSize 45
   SetTextColor 0 0 254
 	SetBorderColor 0 0 254
-  SetBackgroundColor 150 0 0
+  SetBackgroundColor 255 89 89
 	PlayAlertSound 5 300
 	PlayEffect Red
 	MinimapIcon 1 Red Star
@@ -61,9 +61,9 @@ Show # Red Maps High Normal
 	WaystoneTier >= 14
 	Rarity Normal
 	SetFontSize 45
-  SetTextColor 200 200 200
+  SetTextColor 255 255 255
 	SetBorderColor 200 200 200
-  SetBackgroundColor 150 0 0
+  SetBackgroundColor 255 89 89
 	PlayAlertSound 5 300
 	PlayEffect Red
 	MinimapIcon 1 Red Star
@@ -78,9 +78,9 @@ Show # Red Maps Low Rare
 	WaystoneTier <= 13
 	Rarity Rare
 	SetFontSize 45
-  SetTextColor 254 213 0
+  SetTextColor 251 255 0
 	SetBorderColor 254 213 0
-  SetBackgroundColor 150 0 0 175
+  SetBackgroundColor 255 89 89 150
   PlayEffect Red
 	MinimapIcon 1 Red Triangle
   PlayAlertSound 5 200
@@ -93,7 +93,7 @@ Show # Red Maps Low Magic
 	SetFontSize 45
   SetTextColor 0 0 254
 	SetBorderColor 0 0 254
-  SetBackgroundColor 150 0 0 175
+  SetBackgroundColor 255 89 89 150
   PlayEffect Red
 	MinimapIcon 1 Red Triangle
   PlayAlertSound 5 200
@@ -104,9 +104,9 @@ Show # Red Maps Low Normal
 	WaystoneTier <= 13
 	Rarity Normal
 	SetFontSize 45
-  SetTextColor 200 200 200
+  SetTextColor 255 255 255
 	SetBorderColor 200 200 200
-  SetBackgroundColor 150 0 0 175
+  SetBackgroundColor 255 89 89 150
   PlayEffect Red
 	MinimapIcon 1 Red Triangle
   PlayAlertSound 5 200
