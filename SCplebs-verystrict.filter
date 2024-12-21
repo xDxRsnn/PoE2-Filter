@@ -625,7 +625,7 @@ Hide # ShardsLow
   SetBackgroundColor 255 255 255 100
 	
 Hide # Low Tier
-	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Arcanist's Etcher" "Blacksmith's Whetstone" "Artificer's Orb" "Lesser Jeweller's Orb" 
+	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" 
 	AreaLevel >= 70
 	SetFontSize 30
   SetTextColor 0 0 0 255
