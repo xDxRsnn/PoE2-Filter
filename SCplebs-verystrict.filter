@@ -154,8 +154,7 @@ Hide # Yellow Maps Normal
 
 Hide # White Maps Rare
 	Class == "Waystones"
-	WaystoneTier >= 1
-	WaystoneTier <= 5
+	WaystoneTier <= 1
 	Rarity Rare
 	SetFontSize 35
   SetTextColor 254 213 0  
@@ -176,8 +175,7 @@ Hide # White Maps Magic
 	
 Hide # White Maps Normal
 	Class == "Waystones"
-	WaystoneTier >= 1
-	WaystoneTier <= 5
+	WaystoneTier <= 1
 	Rarity Normal
 	SetFontSize 35
   SetTextColor 255 255 255
