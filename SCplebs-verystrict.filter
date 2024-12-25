@@ -152,16 +152,16 @@ Hide # Yellow Maps Normal
 # White Maps
 #--------------------------
 
-Hide # White Maps Rare
+Show # White Maps Rare
 	Class == "Waystones"
 	WaystoneTier >= 1
 	WaystoneTier <= 5
 	Rarity Rare
 	SetFontSize 35
-  SetTextColor 254 213 0  
-	SetBorderColor 254 213 0  
-  SetBackgroundColor 255 255 255 125
-  PlayEffect White Temp
+  SetTextColor 255 255 119
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 119
+	MinimapIcon 2 Yellow Square
 	
 Hide # White Maps Magic
 	Class == "Waystones"
@@ -174,16 +174,16 @@ Hide # White Maps Magic
   SetBackgroundColor 255 255 255 125
   PlayEffect White Temp
 	
-Hide # White Maps Normal
+Show # White Maps Normal
 	Class == "Waystones"
 	WaystoneTier >= 1
 	WaystoneTier <= 5
 	Rarity Normal
 	SetFontSize 35
-  SetTextColor 255 255 255
-	SetBorderColor 255 255 255
-  SetBackgroundColor 255 255 255 125
-  PlayEffect White Temp
+  SetTextColor 255 255 119
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 119
+	MinimapIcon 2 White Square
 	
 #--------------------------
 # Simulacrum
@@ -605,7 +605,7 @@ Show # CURRENCY - Mid Value
 	MinimapIcon 0 Orange Triangle
 	PlayEffect Orange
 
-Show # ShardsHigh
+Hide # ShardsHigh
   Class "Currency"
   BaseType "Horizon Shard" "Binding Shard" "Regal Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Chance Shard"
 	SetFontSize 40
@@ -947,57 +947,53 @@ Hide # Non Rare in maps
 # Normal. Magic, Rare
 #--------------------------
 
-Show # Rare Jewellery
+Hide # Rare Jewellery
 	Rarity Rare
 	Class == "Amulets" "Rings" "Belts"
 	SetFontSize 35
   SetTextColor 255 255 119
 	SetBorderColor 255 255 119
 	SetBackgroundColor 0 0 0
-  MinimapIcon 1 Yellow Triangle
 
-Show # Rares Expert
+Hide # Rares Expert
 	Rarity Rare
 	BaseType "Expert "
 	SetFontSize 35
   SetTextColor 255 255 119
 	SetBackgroundColor 0 0 0
 	SetBorderColor 255 255 119
-	MinimapIcon 2 Yellow Square
 
-Show # Rares
+Hide # Rares
 	Rarity Rare
 	SetFontSize 25
   SetTextColor 255 255 119
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 255 119 0
 	
-Show # Magic Jewellery
+Hide # Magic Jewellery
 	Rarity  Magic
 	Class == "Amulets" "Rings"
 	SetFontSize 25
 	SetTextColor 0 75 250 255
 	SetBorderColor 0 75 250 255
 	SetBackgroundColor 0 20 40 255
-  MinimapIcon 1 Blue Triangle
 	
-Show # Magic
+Hide # Magic
 	Rarity Magic
 	SetFontSize 25
 	SetTextColor 0 75 250 255
 	SetBorderColor 0 75 250 255
 	SetBackgroundColor 0 20 40 255
 	
-Show # Normal Jewellery
+Hide # Normal Jewellery
 	Rarity Normal Magic
 	Class == "Amulets" "Rings" "Belts"
 	SetFontSize 25
 	SetTextColor 180 180 180
 	SetBackgroundColor 0 0 0
   SetBorderColor 180 180 180
-  MinimapIcon 1 White Triangle
 	
-Show # Normal
+Hide # Normal
 	Rarity Normal
 	SetFontSize 25
 	SetTextColor 255 255 255
