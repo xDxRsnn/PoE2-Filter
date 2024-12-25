@@ -115,7 +115,7 @@ Show # Red Maps Low Normal
 # Yellow Maps
 #--------------------------
 
-Hide # Yellow Maps Rare
+Show # Yellow Maps Rare
 	Class == "Waystones"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
@@ -137,7 +137,7 @@ Hide # Yellow Maps Magic
   SetBackgroundColor 255 215 0 125
   PlayEffect Yellow Temp
 	
-Hide # Yellow Maps Normal
+Show # Yellow Maps Normal
 	Class == "Waystones"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
@@ -152,12 +152,12 @@ Hide # Yellow Maps Normal
 # White Maps
 #--------------------------
 
-Hide # White Maps Rare
+Show # White Maps Rare
 	Class == "Waystones"
 	WaystoneTier >= 1
-	WaystoneTier <= 5
+	WaystoneTier <= 2
 	Rarity Rare
-	SetFontSize 35
+	SetFontSize 45
   SetTextColor 254 213 0  
 	SetBorderColor 254 213 0  
   SetBackgroundColor 255 255 255 125
@@ -166,7 +166,7 @@ Hide # White Maps Rare
 Hide # White Maps Magic
 	Class == "Waystones"
 	WaystoneTier >= 1
-	WaystoneTier <= 5
+	WaystoneTier <= 2
 	Rarity Magic
 	SetFontSize 35
   SetTextColor 0 0 254 
@@ -174,12 +174,12 @@ Hide # White Maps Magic
   SetBackgroundColor 255 255 255 125
   PlayEffect White Temp
 	
-Hide # White Maps Normal
+Show # White Maps Normal
 	Class == "Waystones"
 	WaystoneTier >= 1
-	WaystoneTier <= 5
+	WaystoneTier <= 2
 	Rarity Normal
-	SetFontSize 35
+	SetFontSize 45
   SetTextColor 255 255 255
 	SetBorderColor 255 255 255
   SetBackgroundColor 255 255 255 125
