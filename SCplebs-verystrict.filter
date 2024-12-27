@@ -846,12 +846,12 @@ Show # Chance Orb Items
 	PlayEffect Purple Temp
 	
 #--------------------------
-# GOOD BOWS
+# GOOD BOWS AND QUIVERS
 #--------------------------
 
 Show # Expert Dualstring Bow
   Rarity Rare
-  BaseType == "Expert Dualstring Bow"
+  BaseType == "Expert Dualstring Bow" "Primed Quiver"
   SetTextColor 255 255 119
   SetBorderColor 255 215 0
   SetBackgroundColor 30 30 30	
@@ -861,7 +861,7 @@ Show # Expert Dualstring Bow
 
 Show # Expert Dualstring Bow
   Rarity Magic
-  BaseType == "Expert Dualstring Bow"
+  BaseType == "Expert Dualstring Bow" "Primed Quiver"
   SetTextColor 0 75 250 255
   SetBorderColor 255 215 0
   SetBackgroundColor 30 30 30	
@@ -869,10 +869,9 @@ Show # Expert Dualstring Bow
   MinimapIcon 0 Orange Diamond 
 	PlayEffect Orange
 
-	
 Show # Expert Dualstring Bow
   Rarity Normal
-  BaseType == "Expert Dualstring Bow"
+  BaseType == "Expert Dualstring Bow" "Primed Quiver"
   SetTextColor 180 180 180
   SetBorderColor 255 215 0
   SetBackgroundColor 30 30 30	
@@ -880,7 +879,6 @@ Show # Expert Dualstring Bow
   MinimapIcon 0 Orange Diamond 
 	PlayEffect Orange
 
-	
 #--------------------------
 # STR ONLY BASES
 #--------------------------
