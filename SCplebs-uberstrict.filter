@@ -81,11 +81,9 @@ Show # Red Maps Low Rare
   SetTextColor 251 255 0
 	SetBorderColor 254 213 0
   SetBackgroundColor 255 89 89 150
-  PlayEffect Red
-	MinimapIcon 1 Red Triangle
-  PlayAlertSound 5 200
+  PlayEffect Red Temp
 	
-Show # Red Maps Low Magic
+Hide # Red Maps Low Magic
 	Class == "Waystones"
 	WaystoneTier >= 11
 	WaystoneTier <= 13
@@ -94,11 +92,9 @@ Show # Red Maps Low Magic
   SetTextColor 0 0 254
 	SetBorderColor 0 0 254
   SetBackgroundColor 255 89 89 150
-  PlayEffect Red
-	MinimapIcon 1 Red Triangle
-  PlayAlertSound 5 200
+  PlayEffect Red Temp
 	
-Show # Red Maps Low Normal
+Hide # Red Maps Low Normal
 	Class == "Waystones"
 	WaystoneTier >= 11
 	WaystoneTier <= 13
@@ -107,15 +103,13 @@ Show # Red Maps Low Normal
   SetTextColor 255 255 255
 	SetBorderColor 200 200 200
   SetBackgroundColor 255 89 89 150
-  PlayEffect Red
-	MinimapIcon 1 Red Triangle
-  PlayAlertSound 5 200
+  PlayEffect Red Temp
 
 #--------------------------
 # Yellow Maps
 #--------------------------
 
-Show # Yellow Maps Rare
+Hide # Yellow Maps Rare
 	Class == "Waystones"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
@@ -161,7 +155,6 @@ Hide # White Maps Rare
   SetTextColor 254 213 0  
 	SetBorderColor 254 213 0  
   SetBackgroundColor 255 255 255 125
-  PlayEffect White Temp
 	
 Hide # White Maps Magic
 	Class == "Waystones"
@@ -172,7 +165,6 @@ Hide # White Maps Magic
   SetTextColor 0 0 254 
 	SetBorderColor 0 0 254 
   SetBackgroundColor 255 255 255 125
-  PlayEffect White Temp
 	
 Hide # White Maps Normal
 	Class == "Waystones"
@@ -183,7 +175,6 @@ Hide # White Maps Normal
   SetTextColor 255 255 255
 	SetBorderColor 255 255 255
   SetBackgroundColor 255 255 255 125
-  PlayEffect White Temp
 	
 #--------------------------
 # Simulacrum
@@ -257,7 +248,7 @@ Show # Splinters-High
 
 Show # Splinters-Low
 	BaseType == "Simulacrum Splinter" "Breach Splinter" "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter"
-	SetFontSize 45
+	SetFontSize 30
   SetTextColor 255 255 255
   SetBackgroundColor 20 18 85 240
   SetBorderColor 68 68 255 255
@@ -321,7 +312,7 @@ Show # Expedition
 	
 Show # Expedition-Artifacts
   BaseType == "Black Scythe Artifact" "Broken Circle Artifact" "Sun Artifact" "Order Artifact"
-	SetFontSize 45
+	SetFontSize 30
 	SetTextColor 255 85 85 255
 	SetBackgroundColor 61 8 8 255
 	SetBorderColor 255 85 85 255
@@ -345,24 +336,28 @@ Show # Vault Keys
 # Show Trial Stuff
 #--------------------------
 
+Hide # Djinn Barya
+	BaseType == "Djinn Barya"
+	SetFontSize 30
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 180 0 255 255
+
 Show # Trial Coins
 	Class == "Trial Coins"
-	SetFontSize 45
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 180 0 255 255
 	PlayAlertSound 1 300
 	PlayEffect Red
 	
-Show # Inscribed Ultimatum
+Hide # Inscribed Ultimatum
 	BaseType == "Inscribed Ultimatum" 
-	SetFontSize 45
+	SetFontSize 30
 	SetTextColor 255 171 255
 	SetBorderColor 255 0 255 255
 	SetBackgroundColor 100 0 100 255
-	PlayAlertSound 3 300
-	PlayEffect Pink
-	MinimapIcon 0 Pink Circle
 
 #--------------------------
 # Show Relics
@@ -508,7 +503,7 @@ Show # Tablets
 # Catalysts
 #--------------------------
 
-Show # Catalysts
+Hide # Catalysts
 	Class == "Stackable Currency"
 	BaseType == "Adaptive Catalyst" "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Neural Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
 	SetFontSize 45
@@ -656,7 +651,7 @@ Show # CURRENCY - Mid Value
 
 Show # ShardsHigh
   Class "Currency"
-  BaseType "Horizon Shard" "Binding Shard" "Regal Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Chance Shard"
+  BaseType "Horizon Shard" "Binding Shard" "Engineer's Shard" "Annulment Shard" "Horizon Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Chance Shard"
 	SetFontSize 40
   SetTextColor 255 0 0 255
   SetBackgroundColor 0 0 0
@@ -666,7 +661,7 @@ Show # ShardsHigh
 	
 Hide # ShardsLow
 	Class == "Stackable Currency"
-  BaseType == "Alteration Shard" "Transmutation Shard" "Artificer's Shard" "Alchemy Shard"  "Chaos Shard"
+  BaseType == "Alteration Shard" "Transmutation Shard" "Artificer's Shard" "Alchemy Shard"  "Chaos Shard" "Regal Shard"
 	AreaLevel >= 70
 	SetFontSize 25
   SetTextColor 0 0 0 255
@@ -841,7 +836,7 @@ Show # Chance Orb Items
   SetTextColor 0 191 0
   SetBorderColor 0 191 0
   SetBackgroundColor 74 0 160
-  SetFontSize 45
+  SetFontSize 35
   MinimapIcon 2 Purple Triangle
 	PlayEffect Purple Temp
 	
@@ -855,7 +850,7 @@ Show # Expert Dualstring Bow
   SetTextColor 255 255 119
   SetBorderColor 255 215 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 45
+  SetFontSize 35
   MinimapIcon 0 Orange Diamond 
 	PlayEffect Orange
 
@@ -865,7 +860,7 @@ Show # Expert Dualstring Bow
   SetTextColor 0 75 250 255
   SetBorderColor 255 215 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 45
+  SetFontSize 35
   MinimapIcon 0 Orange Diamond 
 	PlayEffect Orange
 
@@ -875,7 +870,7 @@ Show # Expert Dualstring Bow
   SetTextColor 180 180 180
   SetBorderColor 255 215 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 45
+  SetFontSize 35
   MinimapIcon 0 Orange Diamond 
 	PlayEffect Orange
 
@@ -890,7 +885,7 @@ Show # STR Bases ilvl 80+ Rare
   SetTextColor 255 255 119
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Red Diamond 
 	PlayEffect Red Temp
 	
@@ -900,47 +895,47 @@ Show # STR Bases Rare
   SetTextColor 255 255 119
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Red Temp
 	
-Show # STR Bases ilvl 80+ Magic
+Hide # STR Bases ilvl 80+ Magic
   Rarity Magic
   BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
   AreaLevel >= 80
   SetTextColor 0 75 250
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Red Diamond 
 	PlayEffect Red Temp
 	
-Show # STR Bases Magic
+Hide # STR Bases Magic
   Rarity Magic
   BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
   SetTextColor 0 75 250
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Red Temp
 
-Show # STR Bases ilvl 80+ Normal
+Hide # STR Bases ilvl 80+ Normal
   Rarity Normal
   BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
   AreaLevel >= 80
   SetTextColor 180 180 180
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Red Diamond 
 	PlayEffect Red Temp
 	
-Show # STR Bases Normal
+Hide # STR Bases Normal
   Rarity Normal
   BaseType == "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Riveted Mitts" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Stone Tower Shield"
   SetTextColor 180 180 180
   SetBorderColor 255 0 0
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Red Temp
 	
 #--------------------------
@@ -949,62 +944,62 @@ Show # STR Bases Normal
 
 Show # DEX Bases ilvl 80+ Rare
   Rarity Rare
-  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Advanced Hunter Hood" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
+  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
   AreaLevel >= 80
   SetTextColor 255 255 119
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Green Diamond 
 	PlayEffect Green Temp
 	
 Show # DEX Bases Rare
   Rarity Rare
-  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Advanced Hunter Hood" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
+  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
   SetTextColor 255 255 119
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Green Temp
 	
-Show # DEX Bases ilvl 80+ Magic
+Hide # DEX Bases ilvl 80+ Magic
   Rarity Magic
-  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Advanced Hunter Hood" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
+  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
   AreaLevel >= 80
   SetTextColor 0 75 250
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Green Diamond 
 	PlayEffect Green Temp
 	
-Show # DEX Bases Magic
+Hide # DEX Bases Magic
   Rarity Magic
-  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Advanced Hunter Hood" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
+  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
   SetTextColor 0 75 250
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Green Temp
 
-Show # DEX Bases ilvl 80+ Normal
+Hide # DEX Bases ilvl 80+ Normal
   Rarity Normal
-  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Advanced Hunter Hood" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
+  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
   AreaLevel >= 80
   SetTextColor 180 180 180
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Green Diamond 
 	PlayEffect Green Temp
 	
-Show # DEX Bases Normal
+Hide # DEX Bases Normal
   Rarity Normal
-  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Advanced Hunter Hood" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
+  BaseType == "Armoured Vest" "Expert Pathfinder Coat" "Expert Serpentscale Coat" "Expert Studded Vest" "Exquisite Vest" "Mail Coat" "Engraved Bracers" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Embroidered Boots" "Expert Laced Boots" "Expert Lizardscale Boots" "Expert Steeltoe Boots" "Expert Felt Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Aegis Buckler" "Expert Edged Buckler" "Expert Plated Buckler" "Expert Spiked Buckler"
   SetTextColor 180 180 180
   SetBorderColor 57 255 20
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Green Temp
 	
 #--------------------------
@@ -1018,7 +1013,7 @@ Show # INT Bases ilvl 80+ Rare
   SetTextColor 255 255 119
   SetBorderColor 0 0 255
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Blue Diamond 
 	PlayEffect Blue Temp
 	
@@ -1028,47 +1023,47 @@ Show # INT Bases Rare
   SetTextColor 255 255 119
   SetBorderColor 0 0 255
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Blue Temp
 	
-Show # INT Bases ilvl 80+ Magic
+Hide # INT Bases ilvl 80+ Magic
   Rarity Magic
   BaseType == "Arcane Robe" "Enlightened Robe" "Expert Altar Robe" "Expert Hexer's Robe" "Expert Keth Raiment" "Havoc Raiment" "Adorned Gloves" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Elaborate Sandals" "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Wrapped Sandals" "Magus Tiara" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Magus Focus" "Expert Antler Focus" "Expert Crystal Focus" "Expert Plumed Focus" "Voltaic Staff" "Chiming Staff" "Paralysing Staff" "Attuned Wand" "Siphoning Wand" "Galvanic Wand"
   AreaLevel >= 80
   SetTextColor 0 75 250
   SetBorderColor 0 0 255
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Blue Diamond 
 	PlayEffect Blue Temp
 	
-Show # INT Bases Magic
+Hide # INT Bases Magic
   Rarity Magic
   BaseType == "Arcane Robe" "Enlightened Robe" "Expert Altar Robe" "Expert Hexer's Robe" "Expert Keth Raiment" "Havoc Raiment" "Adorned Gloves" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Elaborate Sandals" "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Wrapped Sandals" "Magus Tiara" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Magus Focus" "Expert Antler Focus" "Expert Crystal Focus" "Expert Plumed Focus" "Voltaic Staff" "Chiming Staff" "Paralysing Staff" "Attuned Wand" "Siphoning Wand" "Galvanic Wand"
   SetTextColor 0 75 250
   SetBorderColor 0 0 255
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Blue Temp
 
-Show # INT Bases ilvl 80+ Normal
+Hide # INT Bases ilvl 80+ Normal
   Rarity Normal
   BaseType == "Arcane Robe" "Enlightened Robe" "Expert Altar Robe" "Expert Hexer's Robe" "Expert Keth Raiment" "Havoc Raiment" "Adorned Gloves" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Elaborate Sandals" "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Wrapped Sandals" "Magus Tiara" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Magus Focus" "Expert Antler Focus" "Expert Crystal Focus" "Expert Plumed Focus" "Voltaic Staff" "Chiming Staff" "Paralysing Staff" "Attuned Wand" "Siphoning Wand" "Galvanic Wand"
   AreaLevel >= 80
   SetTextColor 180 180 180
   SetBorderColor 0 0 255
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
   MinimapIcon 2 Blue Diamond 
 	PlayEffect Blue Temp
 	
-Show # INT Bases Normal
+Hide # INT Bases Normal
   Rarity Normal
   BaseType == "Arcane Robe" "Enlightened Robe" "Expert Altar Robe" "Expert Hexer's Robe" "Expert Keth Raiment" "Havoc Raiment" "Adorned Gloves" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Elaborate Sandals" "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Wrapped Sandals" "Magus Tiara" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Magus Focus" "Expert Antler Focus" "Expert Crystal Focus" "Expert Plumed Focus" "Voltaic Staff" "Chiming Staff" "Paralysing Staff" "Attuned Wand" "Siphoning Wand" "Galvanic Wand"
   SetTextColor 180 180 180
   SetBorderColor 0 0 255
   SetBackgroundColor 30 30 30	
-  SetFontSize 35
+  SetFontSize 30
 	PlayEffect Blue Temp
 
 #--------------------------
@@ -1086,7 +1081,7 @@ Show # Good Bases ilvl 80 - Rare
   MinimapIcon 2 Pink Circle
 	PlayEffect Pink Temp
 
-Show # Good  Bases ilvl 80 - Magic
+Hide # Good  Bases ilvl 80 - Magic
   Rarity Magic
   BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   AreaLevel >= 80
@@ -1097,7 +1092,7 @@ Show # Good  Bases ilvl 80 - Magic
   MinimapIcon 2 Pink Circle
 	PlayEffect Pink Temp
 
-Show # Good Bases ilvl 80 - Normal
+Hide # Good Bases ilvl 80 - Normal
   Rarity Normal
   BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   AreaLevel >= 80
@@ -1121,7 +1116,7 @@ Show # Good Bases - Rare
   SetFontSize 35
 	PlayEffect Pink Temp
 
-Show # Good  Bases - Magic
+Hide # Good  Bases - Magic
   Rarity Magic
   BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   SetTextColor 0 75 250 255
@@ -1130,7 +1125,7 @@ Show # Good  Bases - Magic
   SetFontSize 30
 	PlayEffect Pink Temp
 
-Show # Good Bases - Normal
+Hide # Good Bases - Normal
   Rarity Normal
   BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   SetTextColor 180 180 180
@@ -1146,6 +1141,10 @@ Show # Good Bases - Normal
 
 Hide # Bad Bow Base
   BaseType "Cultist"
+  AreaLevel >= 65
+	
+Hide # One Handers
+  Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Spears" "Flails"
   AreaLevel >= 65
 	
 #--------------------------
@@ -1177,7 +1176,7 @@ Show # T2 Uniques
 Show # Multi-Unique Bases
 	Rarity Unique
 	BaseType == "Gold Ring" "Stellar Amulet" "Solar Amulet" "Wide Belt" "Amethyst Ring" "Ruby Ring" "Topaz Ring" "Amber Amulet" "Emerald Ring" "Jade Amulet" "Lazuli Ring" "Sapphire Ring" "Gold Amulet" "Pearl Ring" "Crimson Amulet" "Lapis Amulet" "Rawhide Belt" "Azure Amulet" "Omen Crest Shield" "Chain Tiara" "Linen Wraps" "Silk Robe" "Explorer Armour" "Shrine Sceptre" "Moulded Mitts"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 175 96 37 255
@@ -1204,7 +1203,7 @@ Show # Superior and Quality
   Quality > 10
   SetBorderColor 210 0 0
 	
-Show # 2 Socket Workaround
+Hide # 2 Socket Workaround
   Sockets == SS
   SetBorderColor 30 255 160 255
   SetFontSize 30
@@ -1269,32 +1268,30 @@ Show # Rares
 	SetBackgroundColor 0 0 0 0
 	SetBorderColor 255 255 119 0
 	
-Show # Magic Jewellery
+Hide # Magic Jewellery
 	Rarity  Magic
 	Class == "Amulets" "Rings"
 	SetFontSize 25
 	SetTextColor 0 75 250 255
 	SetBorderColor 0 75 250 255
 	SetBackgroundColor 0 20 40 255
-  MinimapIcon 1 Blue Triangle
 	
-Show # Magic
+Hide # Magic
 	Rarity Magic
 	SetFontSize 25
 	SetTextColor 0 75 250 255
 	SetBorderColor 0 75 250 255
 	SetBackgroundColor 0 20 40 255
 	
-Show # Normal Jewellery
+Hide # Normal Jewellery
 	Rarity Normal Magic
 	Class == "Amulets" "Rings" "Belts"
 	SetFontSize 25
 	SetTextColor 180 180 180
 	SetBackgroundColor 0 0 0
   SetBorderColor 180 180 180
-  MinimapIcon 1 White Triangle
 	
-Show # Normal
+Hide # Normal
 	Rarity Normal
 	SetFontSize 25
 	SetTextColor 255 255 255

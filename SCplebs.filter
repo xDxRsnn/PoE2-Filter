@@ -714,7 +714,7 @@ Show # Uncut Skill Gem
 Show # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
 	ItemLevel >= 18
-	SetFontSize 30
+	SetFontSize 40
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -723,7 +723,7 @@ Show # Uncut Skill Gem
 Show # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
   ItemLevel >= 10
-	SetFontSize 35
+	SetFontSize 40
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -731,7 +731,7 @@ Show # Uncut Skill Gem
 Show # Uncut Skill Gem
 	BaseType == "Uncut Skill Gem"
 	ItemLevel < 10
-	SetFontSize 20
+	SetFontSize 35
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -765,7 +765,7 @@ Show # Uncut Spirit Gem
 Show # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel >= 18
-	SetFontSize 30
+	SetFontSize 40
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -774,7 +774,7 @@ Show # Uncut Spirit Gem
 Show # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
   ItemLevel >= 10
-	SetFontSize 35
+	SetFontSize 40
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -782,7 +782,7 @@ Show # Uncut Spirit Gem
 Show # Uncut Spirit Gem
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel < 10
-	SetFontSize 20
+	SetFontSize 35
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -803,7 +803,7 @@ Show # Uncut Support Gem
 Show # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
   ItemLevel >= 2
-	SetFontSize 35
+	SetFontSize 30
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
@@ -811,10 +811,11 @@ Show # Uncut Support Gem
 Show # Uncut Support Gem
 	BaseType == "Uncut Support Gem"
 	ItemLevel < 2
-	SetFontSize 20
+	SetFontSize 35
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
+	
 #--------------------------
 # Gems
 #--------------------------
@@ -1075,7 +1076,7 @@ Show # INT Bases Normal
 
 Show # Good Bases ilvl 80 - Rare
   Rarity Rare
-  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   AreaLevel >= 80
   SetTextColor 255 255 119
   SetBorderColor 254 128 222
@@ -1086,7 +1087,7 @@ Show # Good Bases ilvl 80 - Rare
 
 Show # Good  Bases ilvl 80 - Magic
   Rarity Magic
-  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   AreaLevel >= 80
   SetTextColor 0 75 250 255
   SetBorderColor 254 128 222
@@ -1097,7 +1098,7 @@ Show # Good  Bases ilvl 80 - Magic
 
 Show # Good Bases ilvl 80 - Normal
   Rarity Normal
-  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   AreaLevel >= 80
   SetTextColor 180 180 180
   SetBorderColor 254 128 222
@@ -1112,7 +1113,7 @@ Show # Good Bases ilvl 80 - Normal
 	
 Show # Good Bases - Rare
   Rarity Rare
-  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   SetTextColor 255 255 119
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30	
@@ -1121,7 +1122,7 @@ Show # Good Bases - Rare
 
 Show # Good  Bases - Magic
   Rarity Magic
-  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   SetTextColor 0 75 250 255
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30
@@ -1130,7 +1131,7 @@ Show # Good  Bases - Magic
 
 Show # Good Bases - Normal
   Rarity Normal
-  BaseType == "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Intricate Gloves" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Tribal Mask" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Omen Crest Shield" "Expert Plumed Focus" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+  BaseType == "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Waxed Jacket" "Expert Tribal Mask" "Expert Omen Crest Shield" "Gold Ring" "Gold Amulet" "Solar Amulet" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Heavy Belt" "Azure Amulet" "Expert Zealot Bow" "Expert Dualstring Bow" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Clasped Sceptre" "Devouring Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
   SetTextColor 180 180 180
   SetBorderColor 254 128 222
   SetBackgroundColor 30 30 30
