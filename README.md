@@ -1,13 +1,12 @@
 # PoE2-Filter
-Barebone Path of Exile (PoE) 2 filter while we wait for NeverSink to finish his.
+Retro's Barebone Path of Exile (PoE) 2 filter.
 
 ##  [Download](https://github.com/RetroCro/PoE2-Filter/archive/refs/heads/main.zip)
 
 ![PoE2 Filter](https://i.imgur.com/8PAflBI.jpeg)
 
 ## Changes
- - Hide nothing
- - Increased font size of all items to the max 
+ - Multiple Strictness levels - Show everything base filter > strict > very strict > uber strict (nice for juiced breach farming)
  - Light Beams + Minimap Icons + Sounds
  - Sockets
  - Quality
