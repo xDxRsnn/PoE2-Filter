@@ -21,7 +21,7 @@ Show # QUEST ITEMS
 # Show Scroll of Wisdom
 #--------------------------
 
-Hide # CURRENCY - SCROLL OF WISDOM
+Show # CURRENCY - SCROLL OF WISDOM
 	BaseType == "Scroll of Wisdom"
 	SetTextColor 32 255 0
 	SetBorderColor 100 50 30 255
